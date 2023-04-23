@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comida al Paso - Landing Page</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-..." crossorigin="anonymous"></script>  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap');
+      </style>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#hero">Inicio</a></li>
+				<li><a href="#menu">Menú</a></li>
+				<li><a href="#promo">Promociones</a></li>
+				<li><a href="#testimonios">Testimonios y reseñas</a></li>
+				<li><a href="#nosotros">Sobre nosotros</a></li>
+				<li><a href="#contact">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!--<section class="hero hero-carousel" id="hero">
+			<h1>Comida al Paso</h1>
+			<p>¡Disfruta de la mejor comida rápida en nuestra cadena de restaurantes al paso!</p>
+		</section>-->
+        <section class="slider" id="hero">
+
+            <div class="slides">
+
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <input type="radio" name="radio-btn" id="radio5">
+              <input type="radio" name="radio-btn" id="radio6">
+              <input type="radio" name="radio-btn" id="radio7">
+              <input type="radio" name="radio-btn" id="radio8">
+              <input type="radio" name="radio-btn" id="radio9">
+              <input type="radio" name="radio-btn" id="radio10">
+              <input type="radio" name="radio-btn" id="radio11">
+
+              <div class="slide first" style="background-image: url(https://s1.1zoom.me/big0/335/Meat_products_Roast_475467.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/125/Fast_food_French_fries_483758.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/645/French_fries_Meat_482411.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/929/Meat_products_Tomatoes_477912.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/406/Fast_food_Hot_dog_Beer_472608.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/465/The_second_dishes_475291.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/555/Meat_products_French_470662.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/45/Meat_products_Roast_481627.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/18/Roast_Chicken_Vegetables_472618.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/604/Soups_Bread_Plate_Spoon_476756.jpg); background-size: cover;"></div>
+              <div class="slide" style="background-image: url(https://s1.1zoom.me/big0/388/Cucumbers_Vegetables_477212.jpg); background-size: cover;"></div>
+              
+
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+                <div class="auto-btn7"></div>
+                <div class="auto-btn8"></div>
+                <div class="auto-btn9"></div>
+                <div class="auto-btn10"></div>
+                <div class="auto-btn11"></div>
+              </div>
+
+            </div>
+            <div class="text-slide">
+                <h1>Comida al Paso</h1>
+                <p>¡Disfruta de la mejor comida rápida al paso!</p>
+                <a href="#" class="cta">Ordena Ahora</a>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                <label for="radio6" class="manual-btn"></label>
+                <label for="radio7" class="manual-btn"></label>
+                <label for="radio8" class="manual-btn"></label>
+                <label for="radio9" class="manual-btn"></label>
+                <label for="radio10" class="manual-btn"></label>
+                <label for="radio11" class="manual-btn"></label>
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio'+counter).checked=true;
+                    counter++;
+                    if(counter>11){
+                        counter=1;
+                    }
+                },5000);
+            </script>
+        </section>          
+
+		<section class="menu" id="menu">
+			<h2>Nuestro Menú</h2>
+			<p>Ofrecemos una amplia variedad de opciones deliciosas y rápidas, incluyendo:</p>
+			<ul>
+				<li>Pollo asado con papas fritas</li>
+				<li>Sándwiches</li>
+				<li>Churrascos</li>
+				<li>Chacareros</li>
+				<li>Completos</li>
+				<li>Colaciones</li>
+				<li>Bebidas</li>
+			</ul>
+			<a href="#" class="cta">Ver Menú Completo</a>
+		</section>
+
+		<section class="promo" id="promo">
+			<h2>Promociones Especiales</h2>
+			<p>Aprovecha nuestras ofertas especiales en productos seleccionados:</p>
+			<ul>
+				<li><strong>Combo del Día:</strong> Pollo asado + bebida + papas fritas por solo $5.99</li>
+				<li><strong>Happy Hour:</strong> Descuentos especiales en todos nuestros sándwiches de 3pm a 5pm</li>
+			</ul>
+			<a href="#" class="cta">Ver Todas las Promociones</a>
+		</section>
+        
+		<section class="testimonios" id="testimonios">
+			<h2>Testimonios y Reseñas</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quos consequuntur sapiente, facilis fugiat voluptas voluptatem! Aliquam quidem ad libero, alias possimus, veniam odio eum nemo assumenda sapiente, neque nulla!</p>
+		</section>
+
+		<section class="nosotros" id="nosotros">
+			<h2>Sobre nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum fugiat cum totam atque ipsam similique praesentium quis cupiditate quae, tempore illum commodi unde porro error voluptas dolorum! Laudantium, minima.</p>
+            <h3>Nuestras ventajas</h3>
+            <p>El local es situado en un punto estratégico donde todos los camiones y vehículos menor y mayor transitan de norte a sur y de sur a norte de forma obligatoria por qué es una avenida principal que deben de transitar cuando van a calama.iquique Antofagasta o más al sur o al norte del pais y hay mucha demanda de productos por la cantidad de vehículos que transitan,además hay media cuadra hay un liceo politécnico,,y muchos talleres de soldadura mecánica y no tengo competencia,porque no existe ningún negocio de ese rubro.</p>
+            <div class="img-nosotros">
+                <img src="imgs/comedor.jpeg">
+                <img src="imgs/congelador.jpeg">
+                <img src="imgs/horno-cocina.jpeg">
+                <img src="imgs/ventus.jpeg">
+            </div>
+		</section>
+
+		<section class="contact" id="contact">
+			<h2>Contacto</h2>
+			<p>Si tienes alguna pregunta, comentario o sugerencia, no dudes en contactarnos:</p>
+			<form action="#" method="post">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje"></textarea>
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+
+	</main>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <h3>Contacto</h3>
+              <p>1234 Calle Falsa</p>
+              <p>Ciudad, País</p>
+              <p>Tel: 123-456-7890</p>
+              <p>Email: info@restaurantalpaso.com</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h3>Horario de atención</h3>
+              <p>Lunes a Viernes: 10am - 9pm</p>
+              <p>Sábado y Domingo: 12pm - 8pm</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h3>Síguenos</h3>
+              <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="firma">&copy; 2023 Comida al Paso. Todos los derechos reservados.</p>
+        <p class="firma">&copy; Desarrollado por @sebastianjorc.</p>
+      </footer>
+</body>
+</html>
+
+<script src="script.js"></script>

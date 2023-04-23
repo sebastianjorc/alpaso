@@ -1,0 +1,463 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .hero {
+    /*background-image: url('https://s1.1zoom.me/big0/388/Cucumbers_Vegetables_477212.jpg');*/
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Estilos para la sección de Menú */
+.menu {
+    background-color: #e5e5e5;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .menu p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los botones de llamado a la acción */
+  .cta {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+    width: fit-content;
+  }
+
+  /* Estilos para la sección Promociones */
+.promo {
+    background-color: #fff;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .promo h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .promo p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .promo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .promo li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .promo li:before {
+    content: "✓";
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+  
+  .promo .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .promo .cta:hover {
+    background-color: #148f77;
+  }
+  /* Testimonios */
+  .testimonios{
+    background-color: #e5e5e5;
+    padding: 80px;
+    text-align: center;
+  }
+  .testimonios h2{    
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .testimonios p{    
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* Nosotros */
+  .nosotros{
+    background-color: #fff;
+    padding: 80px;
+    text-align: center;
+  }
+  .nosotros h2{    
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .nosotros p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+  .img-nosotros{
+    display: flex;
+    justify-content: space-between;
+  }
+  .img-nosotros img{
+    width: 25%;
+  }
+
+  /* Contact section */
+.contact {
+    background-color: #e5e5e5;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .contact form {
+    display: inline-block;
+    text-align: left;
+  }
+  .contact label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+  }
+  .contact textarea {
+    height: 150px;
+  }
+  .contact input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+  }
+  .contact input[type="submit"]:hover {
+    background-color: #c00;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 3rem 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .col-md-4 {
+    width: 30%;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .social-links a:hover {
+    color: #f00;
+  }
+
+  .firma{
+    text-align: right;
+    margin-right: 80px;
+  }
+  
+
+  
+
+/**/
+.slider{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+.slides{
+    width: 1100%;
+    height: 100%;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: calc(100% / 11);
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
+    height: 500px;    
+}
+
+.text-slide{
+    position: absolute;
+    width: 100%;
+    margin-top: -380px;
+    display: grid;
+    font-size: 32px;
+    justify-content: center;
+}
+.text-slide p, .text-slide h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 
+      -1px -1px 0 #333,  
+       1px -1px 0 #333,
+      -1px  1px 0 #333,
+       1px  1px 0 #333;
+    border: 1px bold #333;    
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: whitesmoke;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: calc((100% / 11)*-1);
+}
+#radio3:checked ~ .first{
+    margin-left: calc((100% / 11)*-2);
+}
+#radio4:checked ~ .first{
+    margin-left: calc((100% / 11)*-3);
+}
+#radio5:checked ~ .first{
+    margin-left: calc((100% / 11)*-4);
+}
+#radio6:checked ~ .first{
+    margin-left: calc((100% / 11)*-5);
+}
+#radio7:checked ~ .first{
+    margin-left: calc((100% / 11)*-6);
+}
+#radio8:checked ~ .first{
+    margin-left: calc((100% / 11)*-7);
+}
+#radio9:checked ~ .first{
+    margin-left: calc((100% / 11)*-8);
+}
+#radio10:checked ~ .first{
+    margin-left: calc((100% / 11)*-9);
+}
+#radio11:checked ~ .first{
+    margin-left: calc((100% / 11)*-10);
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 760px;
+}
+
+.navigation-auto div{
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: whitesmoke;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: whitesmoke;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: whitesmoke;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: whitesmoke;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: whitesmoke;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: whitesmoke;
+}
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background: whitesmoke;
+}
+#radio8:checked ~ .navigation-auto .auto-btn8{
+    background: whitesmoke;
+}
+#radio9:checked ~ .navigation-auto .auto-btn9{
+    background: whitesmoke;
+}
+#radio10:checked ~ .navigation-auto .auto-btn10{
+    background: whitesmoke;
+}
+#radio11:checked ~ .navigation-auto .auto-btn11{
+    background: whitesmoke;
+}
+
